@@ -68,7 +68,7 @@ const StudentTable = ({ setClickedStudent }) => {
                   {id + 1}
                 </Table.Cell>
                 <Table.Cell
-                  className="border border-slate-400 sticky left-[50px] bg-white cursor-pointer"
+                  className="border border-slate-400 sticky left-[50px] bg-blue-200 text-black cursor-pointer"
                   onClick={() => setClickedStudent(student)}
                 >
                   {student.Name}

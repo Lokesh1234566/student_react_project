@@ -5,7 +5,7 @@ const FooterComp = ({ clickedStudent }) => {
   return (
     <div className="h-[20vh] bg-gray-300">
       {clickedStudent ? (
-        <div className="flex gap-4 flex-wrap ">
+        <div className="flex gap-4 flex-wrap text-xs sm:text-xl">
           {/* <p>
             <strong>Name:</strong> {clickedStudent.Name}
           </p>

@@ -5,8 +5,8 @@ const FooterComp = ({ clickedStudent }) => {
   return (
     <div className="h-[20vh] bg-gray-300">
       {clickedStudent ? (
-        <div className="flex gap-4 flex-wrap">
-          <p>
+        <div className="flex gap-4 flex-wrap ">
+          {/* <p>
             <strong>Name:</strong> {clickedStudent.Name}
           </p>
           <p>
@@ -23,17 +23,17 @@ const FooterComp = ({ clickedStudent }) => {
           </p>
           <p>
             <strong>Student ID:</strong> {clickedStudent.Student_id}
-          </p>
+          </p> */}
           <p>
             <strong>Email:</strong> {clickedStudent.Email}
           </p>
-          <p>
+          {/* <p>
             <strong>Phone:</strong> {clickedStudent.Phone}
-          </p>
+          </p> */}
           <p>
             <strong>Address:</strong> {clickedStudent.Address}
           </p>
-          <p>
+          {/* <p>
             <strong>Enrollment Year:</strong> {clickedStudent.Enrollment_year}
           </p>
           <p>
@@ -53,7 +53,7 @@ const FooterComp = ({ clickedStudent }) => {
           </p>
           <p>
             <strong>FA_Biology:</strong> {clickedStudent.FA_Biology}
-          </p>
+          </p> */}
         </div>
       ) : (
         <p>No student selected yet</p>

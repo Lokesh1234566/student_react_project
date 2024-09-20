@@ -2,7 +2,8 @@ import React from "react";
 import { Table } from "flowbite-react";
 import sampledata from "../assets/samplev1.json";
 
-const StudentTable = () => {
+// eslint-disable-next-line react/prop-types
+const StudentTable = ({ setClickedStudent }) => {
   return (
     <div className="overflow-x-auto h-[50vh]">
       <div className="min-w-full bg-white border border-gray-200 shadow-md sm:rounded-lg h-full">
@@ -66,7 +67,10 @@ const StudentTable = () => {
                 <Table.Cell className="border border-slate-400 sticky left-0 bg-white">
                   {id + 1}
                 </Table.Cell>
-                <Table.Cell className="border border-slate-400 sticky left-[50px] bg-white">
+                <Table.Cell
+                  className="border border-slate-400 sticky left-[50px] bg-white cursor-pointer"
+                  onClick={() => setClickedStudent(student)}
+                >
                   {student.Name}
                 </Table.Cell>
                 <Table.Cell className="border border-slate-400">

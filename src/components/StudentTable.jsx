@@ -8,10 +8,10 @@ const StudentTable = () => {
       <div className="min-w-full bg-white border border-gray-200 shadow-md sm:rounded-lg">
         <Table className="table-auto w-full text-sm text-left text-gray-500 border-collapse border border-slate-400">
           <Table.Head className="bg-gray-50 border border-slate-500 text-xs sm:text-[16px] sticky top-0 z-10">
-            <Table.HeadCell className="border border-slate-400 sticky left-0  bg-gray-50">
+            <Table.HeadCell className="border border-slate-400 sticky left-0 bg-gray-50">
               SI No
             </Table.HeadCell>
-            <Table.HeadCell className="border border-slate-400 sticky left-[50px]  bg-gray-50">
+            <Table.HeadCell className="border border-slate-400 sticky left-[50px] bg-gray-50">
               Name
             </Table.HeadCell>
             <Table.HeadCell className="border border-slate-400">
@@ -63,7 +63,7 @@ const StudentTable = () => {
           <Table.Body className="">
             {sampledata.student_details.map((student, id) => (
               <Table.Row key={id} className="border border-slate-400">
-                <Table.Cell className="border border-slate-400 sticky left-0  bg-white">
+                <Table.Cell className="border border-slate-400 sticky left-0 bg-white">
                   {id + 1}
                 </Table.Cell>
                 <Table.Cell className="border border-slate-400 sticky left-[50px] bg-white">

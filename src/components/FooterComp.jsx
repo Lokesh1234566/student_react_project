@@ -7,8 +7,9 @@ const FooterComp = ({ clickedStudent }) => {
       {clickedStudent ? (
         <div className="flex gap-4 flex-wrap text-xs sm:text-[16px] p-2 flex-col">
           {
-            <p>
-              <strong>Name:</strong> {clickedStudent.Name}
+            <p className="text-green-500">
+              <span className="text-green-900 font-bold">Name :</span>{" "}
+              {clickedStudent.Name}
             </p>
             /*<p>
             <strong>Age:</strong> {clickedStudent.Age}
@@ -26,14 +27,16 @@ const FooterComp = ({ clickedStudent }) => {
             <strong>Student ID:</strong> {clickedStudent.Student_id}
           </p> */
           }
-          <p>
-            <strong>Email:</strong> {clickedStudent.Email}
+          <p className="text-blue-500">
+            <span className="text-blue-900 font-bold">Email :</span>{" "}
+            {clickedStudent.Email}
           </p>
           {/* <p>
             <strong>Phone:</strong> {clickedStudent.Phone}
           </p> */}
-          <p>
-            <strong>Address:</strong> {clickedStudent.Address}
+          <p className="text-red-500">
+            <span className="text-red-900 font-bold">Address :</span>{" "}
+            {clickedStudent.Address}
           </p>
           {/* <p>
             <strong>Enrollment Year:</strong> {clickedStudent.Enrollment_year}

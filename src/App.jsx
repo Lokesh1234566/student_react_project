@@ -1,10 +1,10 @@
 import React from "react";
-import StudentTable from "./components/StudentTable";
+import StudentPage from "./pages/StudentPage";
 
 const App = () => {
   return (
     <div>
-      <StudentTable />
+      <StudentPage />
     </div>
   );
 };

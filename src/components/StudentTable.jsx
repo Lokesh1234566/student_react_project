@@ -4,63 +4,63 @@ import sampledata from "../assets/samplev1.json";
 
 const StudentTable = () => {
   return (
-    <div className="overflow-x-auto max-h-[600px]">
-      <div className="min-w-full bg-white border border-gray-200 shadow-md sm:rounded-lg">
-        <Table className="table-auto w-full text-sm text-left text-gray-500 border-collapse border border-slate-400">
+    <div className="overflow-x-auto h-[50vh]">
+      <div className="min-w-full bg-white border border-gray-200 shadow-md sm:rounded-lg h-full">
+        <Table className="table-auto w-full text-sm text-left text-gray-500 border-collapse ">
           <Table.Head className="bg-gray-50 border border-slate-500 text-xs sm:text-[16px] sticky top-0 z-10">
-            <Table.HeadCell className="border border-slate-400 sticky left-0 bg-gray-50">
+            <Table.HeadCell className="border border-slate-400 sticky left-0 bg-blue-500 text-white">
               SI No
             </Table.HeadCell>
-            <Table.HeadCell className="border border-slate-400 sticky left-[50px] bg-gray-50">
+            <Table.HeadCell className="border border-slate-400 sticky left-[50px]  bg-blue-500 text-white">
               Name
             </Table.HeadCell>
-            <Table.HeadCell className="border border-slate-400">
+            <Table.HeadCell className="border border-slate-400  bg-blue-500 text-white">
               Age
             </Table.HeadCell>
-            <Table.HeadCell className="border border-slate-400">
+            <Table.HeadCell className="border border-slate-400  bg-blue-500 text-white">
               Gender
             </Table.HeadCell>
-            <Table.HeadCell className="border border-slate-400">
+            <Table.HeadCell className="border border-slate-400  bg-blue-500 text-white">
               Course
             </Table.HeadCell>
-            <Table.HeadCell className="border border-slate-400">
+            <Table.HeadCell className="border border-slate-400  bg-blue-500 text-white">
               10th_Grade
             </Table.HeadCell>
-            <Table.HeadCell className="border border-slate-400">
+            <Table.HeadCell className="border border-slate-400  bg-blue-500 text-white">
               Student_id
             </Table.HeadCell>
-            <Table.HeadCell className="border border-slate-400">
+            <Table.HeadCell className="border border-slate-400  bg-blue-500 text-white">
               Email
             </Table.HeadCell>
-            <Table.HeadCell className="border border-slate-400">
+            <Table.HeadCell className="border border-slate-400  bg-blue-500 text-white">
               Phone
             </Table.HeadCell>
-            <Table.HeadCell className="border border-slate-400">
+            <Table.HeadCell className="border border-slate-400  bg-blue-500 text-white">
               Address
             </Table.HeadCell>
-            <Table.HeadCell className="border border-slate-400">
+            <Table.HeadCell className="border border-slate-400  bg-blue-500 text-white">
               Enrollment_year
             </Table.HeadCell>
-            <Table.HeadCell className="border border-slate-400">
+            <Table.HeadCell className="border border-slate-400  bg-blue-500 text-white">
               FA_English
             </Table.HeadCell>
-            <Table.HeadCell className="border border-slate-400">
+            <Table.HeadCell className="border border-slate-400  bg-blue-500 text-white">
               FA_Kannada
             </Table.HeadCell>
-            <Table.HeadCell className="border border-slate-400">
+            <Table.HeadCell className="border border-slate-400  bg-blue-500 text-white">
               FA_Physics
             </Table.HeadCell>
-            <Table.HeadCell className="border border-slate-400">
+            <Table.HeadCell className="border border-slate-400  bg-blue-500 text-white">
               FA_Chemistry
             </Table.HeadCell>
-            <Table.HeadCell className="border border-slate-400">
+            <Table.HeadCell className="border border-slate-400  bg-blue-500 text-white">
               FA_Mathematics
             </Table.HeadCell>
-            <Table.HeadCell className="border border-slate-400">
+            <Table.HeadCell className="border border-slate-400  bg-blue-500 text-white">
               FA_Biology
             </Table.HeadCell>
           </Table.Head>
-          <Table.Body className="">
+          <Table.Body className="h-full">
             {sampledata.student_details.map((student, id) => (
               <Table.Row key={id} className="border border-slate-400">
                 <Table.Cell className="border border-slate-400 sticky left-0 bg-white">

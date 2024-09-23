@@ -14,7 +14,7 @@ const NavbarComp = ({ onToggle, isOpen }) => {
         <Navbar.Toggle onClick={onToggle} />
       </div>
       <Navbar.Collapse className={`${isOpen ? "block" : "hidden"}`}>
-        <Navbar.Link href="/" active>
+        <Navbar.Link href="/home" active>
           Home
         </Navbar.Link>
         <Navbar.Link href="/about">About</Navbar.Link>

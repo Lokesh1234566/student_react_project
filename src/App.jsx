@@ -9,9 +9,9 @@ import Contact from "./pages/Contact";
 const App = () => {
   return (
     <BrowserRouter>
-      <StudentPage />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<StudentPage />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/contact" element={<Contact />} />

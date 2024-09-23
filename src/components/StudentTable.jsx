@@ -10,11 +10,11 @@ const StudentTable = ({ setClickedStudent }) => {
         <Table className="table-auto w-full text-sm text-left text-gray-500 border-collapse ">
           <Table.Head className="bg-gray-50 border border-slate-500 text-xs sm:text-[16px] sticky top-0 z-30">
             {/* Fix SI No header on both top and left */}
-            <Table.HeadCell className="border border-slate-400 sticky left-0 top-0 bg-blue-500 text-white z-30">
+            <Table.HeadCell className="border border-slate-400 sticky left-0 top-0 bg-blue-500 text-white ">
               SI No
             </Table.HeadCell>
             {/* Fix Name header on both top and left */}
-            <Table.HeadCell className="border border-slate-400 sticky left-[50px] top-0 bg-blue-500 text-white z-30">
+            <Table.HeadCell className="border border-slate-400 sticky left-[50px] top-0 bg-blue-500 text-white ">
               Name
             </Table.HeadCell>
             <Table.HeadCell className="border border-slate-400 bg-blue-500 text-white">

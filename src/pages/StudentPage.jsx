@@ -5,10 +5,14 @@ import FooterComp from "../components/FooterComp";
 
 const StudentPage = () => {
   const [clickedStudent, setClickedStudent] = useState(null);
+  const [tableVisible, setTableVisible] = useState(true); // State for table visibility
+
   return (
-    <div className="h-screen flex flex-col">
-      <HeaderComp />
-      <StudentTable setClickedStudent={setClickedStudent} />
+    <div className="flex flex-col h-screen">
+      <HeaderComp setTableVisible={setTableVisible} />
+      <div className={`flex-grow ${tableVisible ? "" : "hidden"}`}>
+        <StudentTable setClickedStudent={setClickedStudent} />
+      </div>
       <FooterComp clickedStudent={clickedStudent} />
     </div>
   );

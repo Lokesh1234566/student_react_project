@@ -6,7 +6,7 @@ import sampledata from "../assets/samplev1.json";
 const StudentTable = ({ setClickedStudent }) => {
   return (
     <div className="overflow-x-auto h-[50vh]">
-      <div className="min-w-full bg-white border border-gray-200 shadow-md sm:rounded-lg h-full">
+      <div className="min-w-full border border-gray-200 shadow-md sm:rounded-lg h-full">
         <Table className="table-auto w-full text-sm text-left text-gray-500 border-collapse ">
           <Table.Head className="bg-gray-50 border border-slate-500 text-xs sm:text-[16px] sticky top-0 z-10">
             <Table.HeadCell className="border border-slate-400 sticky left-0 bg-blue-500 text-white">

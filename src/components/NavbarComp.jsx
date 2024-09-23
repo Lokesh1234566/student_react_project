@@ -6,14 +6,14 @@ const NavbarComp = ({ onToggle, isOpen }) => {
   return (
     <Navbar fluid rounded>
       <Navbar.Brand href="">
-        <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
+        <span className="self-center whitespace-nowrap text-xl font-semibold ">
           Logo
         </span>
       </Navbar.Brand>
       <div className="flex md:order-2">
         <Navbar.Toggle onClick={onToggle} />
       </div>
-      <Navbar.Collapse className={`${isOpen ? "block" : "hidden"}`}>
+      <Navbar.Collapse className={`${isOpen ? "block" : "hidden"} md:block`}>
         <Navbar.Link href="/home" active>
           Home
         </Navbar.Link>

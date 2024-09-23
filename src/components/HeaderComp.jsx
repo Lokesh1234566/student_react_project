@@ -1,8 +1,8 @@
+/* eslint-disable react/prop-types */
 import React, { useState } from "react";
 import NavbarComp from "./NavbarComp";
 import LogoImage from "../assets/bd886d7ccc6f8dd8db17e841233c9656.jpg";
 
-// eslint-disable-next-line react/prop-types
 const HeaderComp = ({ setTableVisible }) => {
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
 
@@ -13,22 +13,22 @@ const HeaderComp = ({ setTableVisible }) => {
 
   return (
     <div className="h-[30vh] bg-gray-200">
-      <div className="h-[20vh] flex flex-wrap justify-evenly mt-1">
+      <div className="h-[20vh] sm:h-[16vh] md:h-[20vh] flex md:flex-row justify-between items-center p-4">
         <div>
           <img
             src={LogoImage}
-            alt=""
-            className="rounded-lg w-20 h-20 md:w-28 md:h-28"
+            alt="College Logo"
+            className="rounded-lg w-20 h-20 sm:w-20 sm:h-14 md:w-28 md:h-28"
           />
         </div>
-        <div className="flex flex-col">
+        <div className="text-center md:text-left sm:text-xs md:text-xl">
           <p>College Name</p>
-          <p>email</p>
+          <p>Email</p>
           <p>Phone Number</p>
         </div>
-        <div className="flex flex-col">
+        <div className="text-center md:text-left sm:text-xs md:text-xl">
           <p>Address</p>
-          <p>pincode</p>
+          <p>Pincode</p>
         </div>
       </div>
       <div className="h-[10vh]">

@@ -5,38 +5,23 @@ import sampledata from "../assets/samplev1.json";
 // eslint-disable-next-line react/prop-types
 const StudentTable = ({ setClickedStudent }) => {
   return (
-    <div className="overflow-x-auto h-[50vh]">
-      <div className="min-w-full border border-gray-200 shadow-md sm:rounded-lg h-full">
-        <Table className="table-auto w-full text-sm text-left text-gray-500 border-collapse ">
-          <Table.Head className="bg-gray-50 border border-slate-500 text-xs sm:text-[16px] sticky top-0 z-30">
-            {/* Fix SI No header on both top and left */}
-            <Table.HeadCell className="border border-slate-400 sticky left-0 top-0 bg-blue-500 text-white ">
+    <div className="overflow-x-auto h-[48vh] ">
+      <div className="min-w-full border border-gray-200 sm:rounded-lg">
+        <Table className="table-auto w-full text-sm text-left text-gray-500 border-collapse">
+          <Table.Head className="bg-gray-50 border border-slate-500 text-xs sm:text-sm sticky top-0 z-30">
+            {/* SI No Header - sticky on both top and left */}
+            <Table.HeadCell className="border border-slate-400 sticky left-0 top-0 bg-blue-500 text-white z-10">
               SI No
             </Table.HeadCell>
-            {/* Fix Name header on both top and left */}
-            <Table.HeadCell className="border border-slate-400 sticky left-[50px] top-0 bg-blue-500 text-white ">
+            {/* Name Header - sticky on both top and left */}
+            <Table.HeadCell className="border border-slate-400 sticky left-[50px] top-0 bg-blue-500 text-white z-10">
               Name
             </Table.HeadCell>
             <Table.HeadCell className="border border-slate-400 bg-blue-500 text-white">
               Age
             </Table.HeadCell>
             <Table.HeadCell className="border border-slate-400 bg-blue-500 text-white">
-              Gender
-            </Table.HeadCell>
-            <Table.HeadCell className="border border-slate-400 bg-blue-500 text-white">
-              Course
-            </Table.HeadCell>
-            <Table.HeadCell className="border border-slate-400 bg-blue-500 text-white">
-              10th_Grade
-            </Table.HeadCell>
-            <Table.HeadCell className="border border-slate-400 bg-blue-500 text-white">
-              Student_id
-            </Table.HeadCell>
-            <Table.HeadCell className="border border-slate-400 bg-blue-500 text-white">
               Email
-            </Table.HeadCell>
-            <Table.HeadCell className="border border-slate-400 bg-blue-500 text-white">
-              Phone
             </Table.HeadCell>
             <Table.HeadCell className="border border-slate-400 bg-blue-500 text-white">
               Address
@@ -66,12 +51,11 @@ const StudentTable = ({ setClickedStudent }) => {
           <Table.Body className="h-full">
             {sampledata.student_details.map((student, id) => (
               <Table.Row key={id} className="border border-slate-400">
-                {/* Fix SI No and Name in table body cells */}
-                <Table.Cell className="border border-slate-400 sticky left-0 bg-white z-20">
+                <Table.Cell className="border border-slate-400 sticky left-0 bg-white">
                   {id + 1}
                 </Table.Cell>
                 <Table.Cell
-                  className="border border-slate-400 sticky left-[50px] bg-white text-blue-700 cursor-pointer z-20"
+                  className="border border-slate-400 sticky left-[50px] bg-white text-blue-700 cursor-pointer"
                   onClick={() => setClickedStudent(student)}
                 >
                   {student.Name}
@@ -80,22 +64,7 @@ const StudentTable = ({ setClickedStudent }) => {
                   {student.Age}
                 </Table.Cell>
                 <Table.Cell className="border border-slate-400">
-                  {student.Gender}
-                </Table.Cell>
-                <Table.Cell className="border border-slate-400">
-                  {student.Course}
-                </Table.Cell>
-                <Table.Cell className="border border-slate-400">
-                  {student["10th_Grade"]}
-                </Table.Cell>
-                <Table.Cell className="border border-slate-400">
-                  {student.Student_id}
-                </Table.Cell>
-                <Table.Cell className="border border-slate-400">
                   {student.Email}
-                </Table.Cell>
-                <Table.Cell className="border border-slate-400">
-                  {student.Phone}
                 </Table.Cell>
                 <Table.Cell className="border border-slate-400">
                   {student.Address}

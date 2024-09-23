@@ -14,7 +14,7 @@ const StudentTable = ({ setClickedStudent }) => {
               SI No
             </Table.HeadCell>
             {/* Fix Name header on both top and left */}
-            <Table.HeadCell className="border border-slate-400 sticky left-[50px] top-0 bg-blue-500 text-white z-30">
+            <Table.HeadCell className="border border-slate-400 sticky left-[30px] top-0 bg-blue-500 text-white z-30">
               Name
             </Table.HeadCell>
             <Table.HeadCell className="border border-slate-400 bg-blue-500 text-white">

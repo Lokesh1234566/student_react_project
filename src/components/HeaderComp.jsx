@@ -12,7 +12,7 @@ const HeaderComp = ({ setTableVisible }) => {
   };
 
   return (
-    <div className="h-[30vh] bg-gray-200">
+    <div className="h-[30%] bg-gray-200">
       <div className="h-[20vh] flex flex-wrap justify-evenly mt-1">
         <div>
           <img

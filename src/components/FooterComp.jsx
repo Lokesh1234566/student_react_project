@@ -3,7 +3,7 @@ import React from "react";
 
 const FooterComp = ({ clickedStudent }) => {
   return (
-    <div className="fixed bottom-0 left-0 right-0 bg-gray-300 md:p-1 h-[20vh]">
+    <div className="fixed bottom-0 left-0 right-0 bg-gray-300 md:p-1 h-[20%]">
       <div className="mb-1 ml-2 h-[13vh]">
         {clickedStudent ? (
           <div className="flex gap-2 flex-wrap text-xs sm:text-[16px] flex-col mt-1">

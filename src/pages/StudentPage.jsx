@@ -8,7 +8,7 @@ const StudentPage = () => {
   const [tableVisible, setTableVisible] = useState(true); // State for table visibility
 
   return (
-    <div className="flex flex-col h-screen">
+    <div className="flex flex-col h-full">
       <HeaderComp setTableVisible={setTableVisible} />
       <div className={`flex-grow ${tableVisible ? "" : "hidden"}`}>
         <StudentTable setClickedStudent={setClickedStudent} />

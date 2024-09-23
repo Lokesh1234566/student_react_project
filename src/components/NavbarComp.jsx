@@ -14,13 +14,12 @@ const NavbarComp = ({ onToggle, isOpen }) => {
         <Navbar.Toggle onClick={onToggle} />
       </div>
       <Navbar.Collapse className={`${isOpen ? "block" : "hidden"}`}>
-        <Navbar.Link href="#" active>
+        <Navbar.Link href="/" active>
           Home
         </Navbar.Link>
-        <Navbar.Link href="#">About</Navbar.Link>
-        <Navbar.Link href="#">Services</Navbar.Link>
-        <Navbar.Link href="#">Pricing</Navbar.Link>
-        <Navbar.Link href="#">Contact</Navbar.Link>
+        <Navbar.Link href="/about">About</Navbar.Link>
+        <Navbar.Link href="/signup">Signup</Navbar.Link>
+        <Navbar.Link href="/contact">Contact</Navbar.Link>
       </Navbar.Collapse>
     </Navbar>
   );

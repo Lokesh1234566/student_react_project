@@ -13,13 +13,14 @@ const NavbarComp = ({ onToggle, isOpen }) => {
       <div className="flex md:order-2">
         <Navbar.Toggle onClick={onToggle} />
       </div>
-      <Navbar.Collapse className={`${isOpen ? "block" : "hidden"} md:block`}>
-        <Navbar.Link href="/home" active>
-          Home
+      <Navbar.Collapse
+        className={`${isOpen ? "block" : "hidden"} md:block cursor-pointer`}
+      >
+        <Navbar.Link href="/" active>
+          StudentTable
         </Navbar.Link>
-        <Navbar.Link href="/about">About</Navbar.Link>
-        <Navbar.Link href="/signup">Signup</Navbar.Link>
-        <Navbar.Link href="/contact">Contact</Navbar.Link>
+        <Navbar.Link href="/table2">Table2</Navbar.Link>
+        <Navbar.Link href="/table3">Table3</Navbar.Link>
       </Navbar.Collapse>
     </Navbar>
   );

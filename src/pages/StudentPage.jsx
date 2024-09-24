@@ -1,19 +1,12 @@
-import React, { useState } from "react";
+/* eslint-disable react/prop-types */
+import React from "react";
 import StudentTable from "../components/StudentTable";
-import HeaderComp from "../components/HeaderComp";
-import FooterComp from "../components/FooterComp";
 
-const StudentPage = () => {
-  const [clickedStudent, setClickedStudent] = useState(null);
-  const [tableVisible, setTableVisible] = useState(true); // State for table visibility
-
+const StudentPage = ({ setClickedStudent, tableVisible }) => {
   return (
-    <div className="flex flex-col h-[100vh">
-      <HeaderComp setTableVisible={setTableVisible} />
-      <div className={`flex-grow ${tableVisible ? "" : "hidden"}`}>
-        <StudentTable setClickedStudent={setClickedStudent} />
-      </div>
-      <FooterComp clickedStudent={clickedStudent} />
+    <div className={`flex-grow ${tableVisible ? "" : "hidden"}`}>
+      <StudentTable setClickedStudent={setClickedStudent} />{" "}
+      {/* Pass the student selection handler */}
     </div>
   );
 };

@@ -1,21 +1,32 @@
-import React from "react";
-import StudentPage from "./pages/StudentPage";
+import React, { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Signup from "./pages/Signup";
-import Contact from "./pages/Contact";
+import HeaderComp from "./components/HeaderComp";
+import FooterComp from "./components/FooterComp";
+import StudentPage from "./pages/StudentPage";
+import Table2 from "./pages/Table2";
+import Table3 from "./pages/Table3";
 
 const App = () => {
+  const [tableVisible, setTableVisible] = useState(true); // State to toggle table visibility
+  const [clickedStudent, setClickedStudent] = useState(null); // State for clicked student
+
   return (
     <BrowserRouter>
-      <StudentPage />
-      {/* <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/signup" element={<Signup />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes> */}
+      <HeaderComp setTableVisible={setTableVisible} />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <StudentPage
+              setClickedStudent={setClickedStudent}
+              tableVisible={tableVisible}
+            />
+          }
+        />
+        <Route path="/table2" element={<Table2 />} />
+        <Route path="/table3" element={<Table3 />} />
+      </Routes>
+      <FooterComp clickedStudent={clickedStudent} />
     </BrowserRouter>
   );
 };
